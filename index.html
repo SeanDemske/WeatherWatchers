@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherWatcher</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/weather-icons.min.css">
+</head>
+    <body>
+        <div class='app-wrap'>
+            <div>
+                <h1 class='title'>WeatherWatcher</h1>   
+            </div>
+            <header>
+                <input 
+                    type="text" 
+                    autocomplete="off" 
+                    class='search-box' 
+                    placeholder='Search for a city'
+                >
+            </header>
+            <main>
+                <section class='location'>
+                    <div class='city'>City, Country</div>
+                    <div class='date'>Date</div>
+                </section>
+                <div class='current'>
+                    <div class='temp'>0<span class='weather-units'>°F</span></div>
+                    <div class='weather'>Weather</div>
+                    <div class='hi-low'>0<span class='weather-units'>°F</span> / 0<span class='weather-units'>°F</span></div>
+                </div>
+                <div class='image-display'>
+                    <i id='image-icon' class="wi wi-cloud"></i>
+                </div>
+                <div class=unit-selection-container>
+                    <span id='sel-fahrenheit' class='selected'>Fahrenheit</span>
+                    /
+                    <span id='sel-celsius'>Celsuis</span>
+                </div>
+            </main>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
